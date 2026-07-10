@@ -273,17 +273,18 @@
         <div class="text-center mb-16">
           <span class="reveal fade-up section-label">Transformations</span>
           <h2 class="reveal fade-up font-display text-3xl sm:text-4xl lg:text-5xl font-bold mt-4 mb-6">Before & After</h2>
-          <p class="reveal fade-up text-gray-400 max-w-2xl mx-auto text-lg">Drag the slider to see the dramatic difference our services make.</p>
+          <p class="reveal fade-up text-gray-400 max-w-2xl mx-auto text-lg">Drag the slider left or right — dusty before on the left, crystal-clear after on the right.</p>
         </div>
         <div class="comparison-slider reveal fade-up max-w-4xl mx-auto" id="comparison-slider">
           <div class="comparison-container rounded-2xl overflow-hidden shadow-2xl">
-            <!-- Same home image: before = dirty/grimy effect, after = crystal clear -->
-            <div class="comparison-before-side">
-              <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80" alt="Same luxury home before exterior cleaning — windows dirty and dull" class="comparison-img comparison-before-img" loading="lazy">
-              <div class="comparison-dirty-overlay" aria-hidden="true"></div>
-            </div>
-            <div class="comparison-after-wrap">
+            <!-- After: full background — crystal clear result -->
+            <div class="comparison-after-side">
               <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80" alt="Same luxury home after cleaning — windows crystal clear" class="comparison-img comparison-after-img" loading="lazy">
+            </div>
+            <!-- Before: left clip overlay — dusty, blurry, unclean -->
+            <div class="comparison-before-wrap" id="comparison-before-wrap">
+              <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80" alt="Same luxury home before cleaning — dusty and dull" class="comparison-img comparison-before-img" loading="lazy">
+              <div class="comparison-dirty-overlay" aria-hidden="true"></div>
             </div>
             <div class="comparison-handle" id="comparison-handle" role="slider" aria-label="Before and after comparison" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" tabindex="0">
               <div class="handle-line"></div>

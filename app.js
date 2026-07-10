@@ -192,26 +192,26 @@ function initPricingEstimator() {
 /* --- Before/After Comparison Slider --- */
 function initComparisonSlider() {
   const container = document.querySelector('.comparison-container');
-  const afterWrap = document.querySelector('.comparison-after-wrap');
+  const beforeWrap = document.getElementById('comparison-before-wrap');
   const handle = document.getElementById('comparison-handle');
-  if (!container || !afterWrap || !handle) return;
+  if (!container || !beforeWrap || !handle) return;
 
   let isDragging = false;
 
   function setPosition(percent) {
     const clamped = Math.max(0, Math.min(100, percent));
-    afterWrap.style.width = `${clamped}%`;
+    beforeWrap.style.width = `${clamped}%`;
     handle.style.left = `${clamped}%`;
     handle.setAttribute('aria-valuenow', Math.round(clamped));
   }
 
-  function syncAfterImageWidth() {
-    const afterImg = afterWrap.querySelector('.comparison-after-img');
-    if (afterImg) afterImg.style.width = `${container.offsetWidth}px`;
+  function syncBeforeImageWidth() {
+    const beforeImg = beforeWrap.querySelector('.comparison-before-img');
+    if (beforeImg) beforeImg.style.width = `${container.offsetWidth}px`;
   }
 
-  syncAfterImageWidth();
-  window.addEventListener('resize', syncAfterImageWidth, { passive: true });
+  syncBeforeImageWidth();
+  window.addEventListener('resize', syncBeforeImageWidth, { passive: true });
 
   function getPercent(clientX) {
     const rect = container.getBoundingClientRect();
