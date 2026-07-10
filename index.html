@@ -87,7 +87,7 @@
     <!-- Hero -->
     <section id="home" class="relative min-h-screen flex items-center overflow-hidden">
       <div class="hero-bg absolute inset-0">
-        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920&q=80" alt="Luxury Toronto home exterior" class="w-full h-full object-cover" loading="eager">
+        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1920&q=80" alt="Luxury Toronto home exterior" class="w-full h-full object-cover" loading="eager">
         <div class="absolute inset-0 hero-overlay"></div>
         <div class="absolute inset-0 water-gradient"></div>
       </div>
@@ -277,9 +277,13 @@
         </div>
         <div class="comparison-slider reveal fade-up max-w-4xl mx-auto" id="comparison-slider">
           <div class="comparison-container rounded-2xl overflow-hidden shadow-2xl">
-            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80" alt="Dirty windows before cleaning" class="comparison-before" loading="lazy">
+            <!-- Same home image: before = dirty/grimy effect, after = crystal clear -->
+            <div class="comparison-before-side">
+              <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80" alt="Same luxury home before exterior cleaning — windows dirty and dull" class="comparison-img comparison-before-img" loading="lazy">
+              <div class="comparison-dirty-overlay" aria-hidden="true"></div>
+            </div>
             <div class="comparison-after-wrap">
-              <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&q=80" alt="Crystal clear windows after cleaning" class="comparison-after" loading="lazy">
+              <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80" alt="Same luxury home after cleaning — windows crystal clear" class="comparison-img comparison-after-img" loading="lazy">
             </div>
             <div class="comparison-handle" id="comparison-handle" role="slider" aria-label="Before and after comparison" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" tabindex="0">
               <div class="handle-line"></div>
@@ -301,12 +305,12 @@
           <p class="reveal fade-up text-gray-400 max-w-2xl mx-auto text-lg">Premium results across Toronto's finest residential and commercial properties.</p>
         </div>
         <div class="gallery-grid">
-          <div class="gallery-item reveal fade-up"><img src="https://images.unsplash.com/photo-1613490493574-7fde63acd811?w=600&q=80" alt="Luxury Toronto home" loading="lazy"><div class="gallery-overlay"><span>Luxury Residential</span></div></div>
-          <div class="gallery-item reveal fade-up tall"><img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&q=80" alt="Commercial building" loading="lazy"><div class="gallery-overlay"><span>Commercial Tower</span></div></div>
-          <div class="gallery-item reveal fade-up"><img src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=600&q=80" alt="Window reflections" loading="lazy"><div class="gallery-overlay"><span>Crystal Clear Glass</span></div></div>
-          <div class="gallery-item reveal fade-up"><img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&q=80" alt="Pressure washing" loading="lazy"><div class="gallery-overlay"><span>Pressure Washing</span></div></div>
-          <div class="gallery-item reveal fade-up wide"><img src="https://images.unsplash.com/photo-1605276374101-de4c0a5eafbd?w=800&q=80" alt="Modern residential property" loading="lazy"><div class="gallery-overlay"><span>Modern Estate</span></div></div>
-          <div class="gallery-item reveal fade-up"><img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&q=80" alt="Exterior cleaning" loading="lazy"><div class="gallery-overlay"><span>Exterior Restoration</span></div></div>
+          <div class="gallery-item reveal fade-up"><img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=600&q=80" alt="Luxury Toronto home exterior" loading="lazy" decoding="async"><div class="gallery-overlay"><span>Luxury Residential</span></div></div>
+          <div class="gallery-item reveal fade-up tall"><img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=600&q=80" alt="Commercial building downtown Toronto" loading="lazy" decoding="async"><div class="gallery-overlay"><span>Commercial Tower</span></div></div>
+          <div class="gallery-item reveal fade-up"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=600&q=80" alt="Crystal clear window reflections" loading="lazy" decoding="async"><div class="gallery-overlay"><span>Crystal Clear Glass</span></div></div>
+          <div class="gallery-item reveal fade-up"><img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=600&q=80" alt="Professional pressure washing service" loading="lazy" decoding="async"><div class="gallery-overlay"><span>Pressure Washing</span></div></div>
+          <div class="gallery-item reveal fade-up wide"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Modern residential property exterior" loading="lazy" decoding="async"><div class="gallery-overlay"><span>Modern Estate</span></div></div>
+          <div class="gallery-item reveal fade-up"><img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=600&q=80" alt="Exterior cleaning and restoration" loading="lazy" decoding="async"><div class="gallery-overlay"><span>Exterior Restoration</span></div></div>
         </div>
       </div>
     </section>

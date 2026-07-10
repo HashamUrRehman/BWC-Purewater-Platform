@@ -206,7 +206,7 @@ function initComparisonSlider() {
   }
 
   function syncAfterImageWidth() {
-    const afterImg = afterWrap.querySelector('.comparison-after');
+    const afterImg = afterWrap.querySelector('.comparison-after-img');
     if (afterImg) afterImg.style.width = `${container.offsetWidth}px`;
   }
 
